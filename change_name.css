@@ -1,0 +1,126 @@
+*{
+    font-family: "Open Sans",sans-serif;
+}
+.banner{
+    z-index: -1;
+    position: absolute;
+    height: 80%;
+    width: 60%;
+}
+.example
+{
+    color: #5a9dae;
+}
+#btn-color{
+    background-color: #ee9949;
+}
+#main_page{
+    position: relative;
+    top: 300px;
+}
+.container-fluid hr{
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    box-shadow: 0 8px 10px 0px rgb(0 0 0);
+    height: 29px;
+    background-color: transparent;
+    position: relative;
+    top: 210px;
+}
+section{
+    height: 94vh;
+    width: 100vw;
+    background-image: url("media/contact1.jpg");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#contact{
+    top: 240px;
+    position: relative;
+}
+.about_back{
+    background-image: url("media/about2.jpg");
+    background-color: rgb(232 232 232);
+    background-blend-mode: darken;
+    background-position: left;
+    background-size: 83%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 94vh;
+    padding: 0;
+    overflow:hidden;
+}
+.about_content{
+    width: 55%;
+    position: relative;
+    top: 40%;
+    background-color: #fdfdfd;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .about_back{
+        background-image: none;
+    }
+    .about_content{
+        top: 1%;
+    }
+    #banner-img img{
+        display: none;
+    }
+    #banner-img{
+        background: rgba(0, 0, 0, 0.7) url("media/banner.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-blend-mode: darken;
+    }
+    #main_page{
+        top:25px;
+    }
+    .container-fluid hr{
+        display: none;
+    }
+    #btn-color {
+        margin-bottom: 60px;
+    }
+    .banner_content_color{
+        color: white;
+    }
+}
+@media only screen and (max-width: 991.98px) {
+    .about_content{
+        width: 65%;
+    }
+    .container-fluid hr{
+        top: -30px;
+    }
+    #main_page{
+        top:10px;
+    }
+    #contact{
+        top: 100px;
+        position: relative;
+    }
+}
+@media only screen and (max-width: 1200px){
+    section{
+        background-image: none;
+        background-color: #6c757d;
+        height: 100vh;
+    }
+    #contact{
+        background-color: #212529;
+        border-color: black;
+        border-width: 5px;
+        border: solid;
+        top: 220px;
+        border-image: linear-gradient(to bottom,red,rgba(0, 0, 0, 0)) 1 49%;
+        box-shadow: 9px 28px 160px red;
+    }
+    .contact-det-color{
+        color: white;
+    }
+    .contact-align{
+        width: 100%;
+    }
+}
